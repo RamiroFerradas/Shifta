@@ -6,7 +6,7 @@
 
         public override void Send(string message)
         {
-            Console.WriteLine($"📱 Sending SMS to {Recipient}: {message}...");
+            Console.WriteLine($"📱 Enviando SMS a {Recipient}: {message}...");
         }
     }
 }

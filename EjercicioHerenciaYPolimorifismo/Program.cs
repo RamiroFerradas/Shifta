@@ -13,6 +13,7 @@ namespace NotificationsApp
                 new EmailNotification("usuario@ejemplo.com"),
                 new SmsNotification("+5491122334455"),
                 new PushNotification("DispositivoXYZ"),
+                new SlackNotification("general")
             };
 
             while (true)
@@ -27,15 +28,13 @@ namespace NotificationsApp
                 {
                     notification.Send(mensaje);
 
-                    var log = new Log
+                    logs.Add(new Log
                     {
                         Type = notification.GetType().Name,
-                        Recipient = ((NotificationBase)notification).Recipient,
+                        Recipient = notification.Recipient,
                         Message = mensaje,
                         Date = DateTime.Now
-                    };
-
-                    logs.Add(log);
+                    });
                 }
             }
 

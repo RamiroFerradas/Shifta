@@ -6,7 +6,7 @@
 
         public override void Send(string message)
         {
-            Console.WriteLine($"🔔 Sending push notification to {Recipient}: {message}");
+            Console.WriteLine($"🔔 Enviando notificación push a {Recipient}: {message}");
         }
     }
 }

@@ -11,7 +11,7 @@
 
         public virtual void Send(string message)
         {
-            Console.WriteLine($"Sending message to {Recipient}: {message}...");
+            Console.WriteLine($"Enviando mensaje a {Recipient}: {message}...");
         }
     }
 }

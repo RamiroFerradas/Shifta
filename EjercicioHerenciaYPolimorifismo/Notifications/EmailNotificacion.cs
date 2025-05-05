@@ -6,7 +6,7 @@
 
         public override void Send(string message)
         {
-            Console.WriteLine($"📧 Sending email to {Recipient}: {message}...");
+            Console.WriteLine($"📧 Enviando correo electrónico a {Recipient}: {message}...");
         }
     }
 }
